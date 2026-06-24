@@ -1,0 +1,37 @@
+name: Deploy dev
+
+on:
+  push:
+    branches:
+      - dev
+
+concurrency:
+  group: deploy-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # Le gabarit lui-meme ne deploie pas : seuls les depots de groupe instancies le font.
+    if: github.repository != 'jc-acobi/revue-transfo'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          script: |
+            DIR=/var/www/workshop/__GROUPE__/dev
+            REPO=https://github.com/${{ github.repository }}.git
+            if [ -d "$DIR/.git" ]; then
+              cd "$DIR"
+              git fetch origin dev
+              git reset --hard origin/dev
+            else
+              rm -rf "$DIR"
+              git clone -b dev "$REPO" "$DIR"
+            fi
