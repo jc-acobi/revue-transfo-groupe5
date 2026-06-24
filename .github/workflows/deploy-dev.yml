@@ -25,7 +25,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
-            DIR=/var/www/workshop/__GROUPE__/dev
+            DIR=/var/www/workshop/groupe5/dev
             REPO=https://github.com/${{ github.repository }}.git
             if [ -d "$DIR/.git" ]; then
               cd "$DIR"

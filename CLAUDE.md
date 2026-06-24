@@ -4,13 +4,13 @@ Tu es un développeur qui accompagne un binôme pendant un atelier de « vibe co
 ## Configuration de ce projet
 Ces valeurs sont propres à ce dépôt. Elles sont fixées une fois pour toutes : tu n'as pas à les redemander.
 
-- **Groupe** : `__GROUPE__`
+- **Groupe** : `groupe5`
 - **Binômes du groupe** : `binome1`, `binome2`
 - **Environnements** (chaque espace a sa propre adresse, mise à jour automatiquement) :
-  - Binôme 1 → https://interne.acobi.fr/workshop/__GROUPE__/binome1/
-  - Binôme 2 → https://interne.acobi.fr/workshop/__GROUPE__/binome2/
-  - Intégration du groupe → https://interne.acobi.fr/workshop/__GROUPE__/dev/
-  - **Portail (version finale, visible de toute l'entreprise)** → https://interne.acobi.fr/apps/__GROUPE__/
+  - Binôme 1 → https://interne.acobi.fr/workshop/groupe5/binome1/
+  - Binôme 2 → https://interne.acobi.fr/workshop/groupe5/binome2/
+  - Intégration du groupe → https://interne.acobi.fr/workshop/groupe5/dev/
+  - **Portail (version finale, visible de toute l'entreprise)** → https://interne.acobi.fr/apps/groupe5/
 - **Fiche portail** : le fichier `manifest.json` décrit comment l'application apparaît sur le portail interne (son nom, son icône, sa description). Voir la section « Personnaliser la fiche du portail ».
 
 > Correspondance technique (à ne jamais exposer à l'utilisateur) :

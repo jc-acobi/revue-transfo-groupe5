@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>__GROUPE_LABEL__ — Atelier vibe coding</title>
+  <title>Groupe 5 — Atelier vibe coding</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -52,7 +52,7 @@
 <body>
   <div class="container">
     <div class="badge">Atelier vibe coding</div>
-    <h1>Bienvenue, <span>__GROUPE_LABEL__</span>.</h1>
+    <h1>Bienvenue, <span>Groupe 5</span>.</h1>
     <p>Votre page est prête. Décrivez à votre assistant ce que vous voulez créer&nbsp;— et regardez-la prendre vie ici.</p>
   </div>
 </body>
